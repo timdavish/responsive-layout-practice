@@ -1,6 +1,50 @@
 main {
   width: 100%;
-  max-width: 960px;
+  max-width: 550px;
   margin: 0 auto;
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "header"
+    "aside"
+    "section"
+    "footer";
+  grid-row-gap: 5px;
+  grid-column-gap: 10px;
+}
+
+@media (min-width: 960px) {
+  main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "header header"
+      "aside section"
+      "footer footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+  }
+}
+
+main > * {
+  border: 1px solid red;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
 }
