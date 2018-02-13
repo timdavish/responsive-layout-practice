@@ -1,3 +1,3 @@
-# Responsive Layout Starter
+# Responsive Layout Practice
 
-A set of boilerplates for responsive web layouts.
+A collection of responsive web layouts.
