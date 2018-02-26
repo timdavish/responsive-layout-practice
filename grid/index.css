@@ -48,3 +48,31 @@ section {
 footer {
   grid-area: footer;
 }
+
+.splash_footer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "textbox"
+    "triangle";
+  justify-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.textbox {
+  grid-area: textbox;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+.triangle {
+  grid-area: triangle;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid black;
+}
